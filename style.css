@@ -1,0 +1,508 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+** {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #2c2f38;
+    color: #fff;
+}
+
+/* ====== RESET ====== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+
+/* ====== NAVBAR ====== */
+header {
+    width: 100%;
+    padding: 18px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #111;
+    color: #fff;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* NAV LINKS */
+.nav-links {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+    transition: 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #00aaff;
+}
+
+/* ICONS */
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.icons i {
+    font-size: 22px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.icons i:hover {
+    color: #00aaff;
+}
+@media (max-width: 992px) {
+    header {
+        padding: 16px 25px;
+    }
+
+    .nav-links {
+        gap: 20px;
+    }
+
+    .icons i {
+        font-size: 24px;
+    }
+}
+@media (max-width: 768px) {
+
+    /* Navbar Layout */
+    header {
+        padding: 15px 20px;
+    }
+
+    /* Hide Desktop Menu */
+    .nav-links {
+        display: none;
+    }
+
+    /* Icons spacing larger for touch */
+    .icons {
+        gap: 15px;
+    }
+
+    .icons i {
+        font-size: 26px;
+        cursor: pointer;
+    }
+}
+
+
+
+
+/* ---------------- HERO SECTION ---------------- */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 8%;
+    gap: 40px;
+}
+
+/* -------- LEFT SIDE -------- */
+.left .hi {
+    font-size: 22px;
+    opacity: 0.7;
+}
+
+.left h1 {
+    font-size: 55px;
+    font-weight: 700;
+}
+
+.line {
+    width: 80px;
+    height: 4px;
+    background: #e0b21c;
+    margin: 15px 0;
+}
+
+.left .desc {
+    font-size: 15px;
+    line-height: 1.7;
+    max-width: 330px;
+    opacity: 0.8;
+}
+
+/* -------- CENTER IMAGE -------- */
+.center-img img {
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 0 25px rgba(0,0,0,0.4);
+    box-shadow: 2px 20px 20px 10px black;
+}
+
+/* -------- RIGHT SIDE -------- */
+.right h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.right p {
+    max-width: 260px;
+    opacity: 0.8;
+    font-size: 15px;
+}
+
+.btn {
+    display: inline-block;
+    margin: 15px 0;
+    color: #e0b21c;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* COMPANY SECTION */
+.companies {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.company-box_1 {
+    background-color: #39ca39;
+    padding: 15px 30px;
+    border-radius: 10px;
+}
+.company-box_2{
+    background-color: #fff;
+    padding: 15px 30px;
+    border-radius: 10px;
+}
+.company-box_3{
+    background-color: #61bfe4;
+    padding: 15px 30px;
+    border-radius: 10px;
+}
+.company-box_4{
+    background-color: #ec0c0c;
+    padding: 15px 30px;
+    border-radius: 10px;
+}
+
+
+/* Services & Stats */
+.services-and-stats {
+    background-color: #18191d;
+  display: flex;
+  gap: 80px;
+  padding: 100px 0;
+  align-items: flex-start;
+}
+
+.stats-column h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.description-text {
+  color: var(--light-text-color);
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.number {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.label {
+  color: var(--light-text-color);
+  font-size: 0.9rem;
+}
+
+.services-list {
+  flex: 1.5;
+}
+
+.service-item {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--text-color);
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  transition: 0.3s;
+}
+
+.service-item:hover {
+  color: var(--primary-color);
+}
+
+.service-image-placeholder {
+  width: 80px;
+  height: 60px;
+  background-color: var(--card-bg);
+  margin-right: 20px;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+
+
+}
+
+/* Footer */
+.footer {
+  background-color: #18191d;
+  text-align: center;
+  padding: 20px;
+  margin-top: 80px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.footer h3 {
+  color: var(--primary-color);
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.footer p {
+  color: var(--light-text-color);
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+}
+
+.footer-socials {
+  margin: 15px 0;
+}
+
+.footer-socials a {
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  margin: 0 10px;
+  transition: 0.3s;
+}
+
+.footer-socials a:hover {
+  color: #fff;
+}
+
+.footer .copyright {
+  color: #777;
+  font-size: 0.85rem;
+  margin-top: 15px;
+}
+
+/* Footer */
+.footer {
+  background-color: #18191d;
+  text-align: center;
+  padding: 50px 20px;
+  margin-top: 80px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.footer h3 {
+  color: var(--primary-color);
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.footer p {
+  color: var(--light-text-color);
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+}
+
+.footer-socials {
+  margin: 15px 0;
+}
+
+.footer-socials a {
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  margin: 0 10px;
+  transition: 0.3s;
+}
+
+.footer-socials a:hover {
+  color: #fff;
+}
+
+.footer .copyright {
+  color: #777;
+  font-size: 0.85rem;
+  margin-top: 15px;
+
+
+}
+
+/* =======================
+   TABLET RESPONSIVE (max 992px)
+   ======================= */
+@media (max-width: 992px) {
+
+
+    /* HERO */
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .center-img img {
+        width: 260px;
+        height: 260px;
+    }
+
+    .left h1 {
+        font-size: 45px;
+    }
+
+    .right h3 {
+        font-size: 24px;
+    }
+
+    /* Stats & Services */
+    .services-and-stats {
+        flex-direction: column;
+        align-items: center;
+        padding: 60px 30px;
+        text-align: center;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .services-list {
+        width: 90%;
+    }
+}
+
+
+/* =======================
+   MOBILE RESPONSIVE (max 768px)
+   ======================= */
+@media (max-width: 768px) {
+
+
+
+    /* HERO */
+    .hero {
+        flex-direction: column;
+        padding: 50px 20px;
+    }
+
+    .center-img img {
+        width: 220px;
+        height: 220px;
+    }
+
+    .left h1 {
+        font-size: 38px;
+    }
+
+    .left .desc {
+        max-width: 100%;
+        font-size: 14px;
+    }
+
+    .right p {
+        max-width: 100%;
+    }
+
+    /* COMPANIES */
+    .companies {
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .company-box_1,
+    .company-box_2,
+    .company-box_3,
+    .company-box_4 {
+        width: 45%;
+        text-align: center;
+    }
+
+    /* SERVICES & STATS */
+    .services-and-stats {
+        padding: 50px 20px;
+        gap: 40px;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .service-image-placeholder {
+        margin-right: 0;
+        width: 100%;
+        height: 140px;
+    }
+}
+
+
+/* =======================
+   SMALL MOBILE (max 480px)
+   ======================= */
+@media (max-width: 480px) {
+
+    header {
+        padding: 15px 15px;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .center-img img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .left h1 {
+        font-size: 32px;
+    }
+
+    .right h3 {
+        font-size: 22px;
+    }
+
+    .companies div {
+        width: 100%;
+    }
+
+    .service-item {
+        padding: 15px 0;
+    }
+}
+
